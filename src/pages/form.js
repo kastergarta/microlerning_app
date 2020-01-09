@@ -19,8 +19,17 @@ const FormPage = () => (
 
                     <div className={"col-5"}>
                         <div className={"contact-items"}>
-                            <p>Plain email is the best way to contact us.</p>
-                            <h2>contact@histaff.io</h2>
+                         <form>
+                           <label>
+                             Name:
+                             <input type="text" name="name" />
+                           </label>
+                           <label>
+                             E-mail:
+                             <input type="text" name="email" />
+                           </label>
+                          <input type="submit" value="Submit" />
+                         </form>
                         </div>
                     </div>
                 </div>
