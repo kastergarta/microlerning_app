@@ -4,6 +4,18 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const FormPage = () => (
+
+    const handleLoginSubmit = (e) => {
+
+       emailjs.send(
+       "hawkaton.us@gmail.com",
+       'template_OztCtOOX',
+        templateParams,
+       'user_qkmMCvLoKG06KjZD3u8VY'
+      )
+
+    }
+
     <Layout>
         <SEO title="FormPage"/>
         <div className={"container"}>
@@ -19,7 +31,7 @@ const FormPage = () => (
 
                     <div className={"col-5"}>
                         <div className={"contact-items"}>
-                         <form>
+                         <form onSubmit={handleLoginSubmit}>
                            <label>
                              Name:
                              <input type="text" name="name" />
