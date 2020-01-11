@@ -38,6 +38,7 @@ export default function FormPage () {
                 </div>
 
                 <div className={"row"}>
+
                     <div className={"col-7"}>
                         <p>!!!!!</p>
                     </div>
@@ -45,18 +46,13 @@ export default function FormPage () {
                     <div className={"col-5"}>
                         <div className={"contact-items"}>
                          <form onSubmit={handleLoginSubmit}>
-                           <label>
-                             Name:
-                             <input type="text" name="name" onChange={e => setName(e.target.value)} value={name}/>
-                           </label>
-                           <label>
-                             E-mail:
-                             <input type="text" name="email" onChange={e => setEmail(e.target.value)} value={email}/>
-                           </label>
-                          <input type="submit" value="Submit" />
+                          <input type="text" name="field1" placeholder="Name:" onChange={e => setName(e.target.value)} value={name}/>
+                          <input type="email" name="field2" placeholder="E-mail:" onChange={e => setEmail(e.target.value)} value={email}/>
+                          <input type="submit" value="Send" />
                          </form>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -64,41 +60,3 @@ export default function FormPage () {
 
   );
 }
-
-// const FormPage = () => (
-//
-//     <Layout>
-//         <SEO title="FormPage"/>
-//         <div className={"container"}>
-//             <div className={"content"}>
-//                 <div className={"title"}>
-//                     <h1>Form</h1>
-//                 </div>
-//
-//                 <div className={"row"}>
-//                     <div className={"col-7"}>
-//                         <p>!!!!!</p>
-//                     </div>
-//
-//                     <div className={"col-5"}>
-//                         <div className={"contact-items"}>
-//                          <form onSubmit={handleLoginSubmit}>
-//                            <label>
-//                              Name:
-//                              <input type="text" name="name" />
-//                            </label>
-//                            <label>
-//                              E-mail:
-//                              <input type="text" name="email" />
-//                            </label>
-//                           <input type="submit" value="Submit" />
-//                          </form>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     </Layout>
-// )
-//
-// export default FormPage
