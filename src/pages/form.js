@@ -1,20 +1,27 @@
 import React from "react"
+import emailjs from 'emailjs-com';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+const handleLoginSubmit = (e) => {
+
+  let templateParams = {
+    user_name: name,
+    user_email: email,
+    message_html: "Hi!",
+   }
+   
+   emailjs.send(
+   "hawkaton.us@gmail.com",
+   'template_OztCtOOX',
+    templateParams,
+   'user_qkmMCvLoKG06KjZD3u8VY'
+  )
+
+}
+
 const FormPage = () => (
-
-    const handleLoginSubmit = (e) => {
-
-       emailjs.send(
-       "hawkaton.us@gmail.com",
-       'template_OztCtOOX',
-        templateParams,
-       'user_qkmMCvLoKG06KjZD3u8VY'
-      )
-
-    }
 
     <Layout>
         <SEO title="FormPage"/>
