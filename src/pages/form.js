@@ -34,13 +34,13 @@ export default function FormPage () {
         <div className={"container"}>
             <div className={"content"}>
                 <div className={"title"}>
-                    <h1>Form</h1>
+                    <h1>This is Your First Course</h1>
                 </div>
 
                 <div className={"row"}>
 
                     <div className={"col-7"}>
-                        <p>!!!!!</p>
+                        <p>This course is for aspiring chess players who know how the pieces move and understand how to use some tactics such as forks and skewers but have never had any formal chess training.<br/><br/>  If you want to improve your chess in as short a time as possible, this is the course for you!</p>
                     </div>
 
                     <div className={"col-5"}>
