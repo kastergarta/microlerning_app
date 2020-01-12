@@ -19,7 +19,7 @@ export default function FormPage () {
      }
 
      emailjs.send(
-     "hawkaton.us@gmail.com",
+     "theguru.app.team@gmail.com",
      'template_OztCtOOX',
       templateParams,
      'user_qkmMCvLoKG06KjZD3u8VY'
