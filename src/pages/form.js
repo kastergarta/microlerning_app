@@ -41,7 +41,7 @@ export default function FormPage () {
                 <div className={"row"}>
 
                     <div className={"col-7"}>
-                        <p>This course is for aspiring chess players who know how the pieces move and understand how to use some tactics such as forks and skewers but have never had any formal chess training.<br/><br/>  If you want to improve your chess in as short a time as possible, this is the course for you!</p>
+                        <p>Podcasting is exploding! Podcast hosts have the ability to spread their messages, share their views, build an engaged audience, and interview high-profile guests. Now, this can be you! <br/><br/> This course will take you from not knowing anything about the medium to being able to record and launch your very own show.</p>
                     </div>
 
                     <div className={"col-5"}>
