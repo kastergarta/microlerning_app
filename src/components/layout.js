@@ -11,7 +11,7 @@ import {StaticQuery, graphql, Link} from "gatsby"
 
 import Header from "./header"
 import "../../static/styles/main.scss"
-import logo from "../../static/images/logo.svg"
+import logo from "../../static/images/GURU_logo_2.jpg"
 import iconTwitter from "../../static/images/icon-twitter.svg"
 import iconLinkedin from "../../static/images/icon-linkedin.svg"
 import iconGitHub from "../../static/images/icon-github.svg"
@@ -36,13 +36,13 @@ const Layout = ({children}) => (
                         <div className={"col-5"}>
                             <div className={"widget__item"}>
                                 <div className={"logo"}>
-                                    <Link to="/" title={"HiStaff"}>
+                                    <Link to="/" title={"Microlearning App"}>
                                         <img alt={"Logo"} src={logo}/>
                                     </Link>
                                 </div>
 
                                 <div className={"about"}>
-                                    <p>A software that was created with the goal of solving the problems of Human Resources in small and medium-sized businesses.</p>
+                                    <p>At GURU, we are always hungry for more knowledge. With GURU, we try to create a simple and easy way for people to gain new knowledge in less time than it takes to drink a cup of coffee. In just 5 minutes, we hope to make you just a little more knowledgeable than you were the day before.</p>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +87,7 @@ const Layout = ({children}) => (
                     </div>
 
                     <div className={"copyright"}>
-                        <p>Copyright {new Date().getFullYear()}, {` `} <a href="https://histaff.io" title={"HiStaff"}>HiStaff</a>. All rights reserved.</p>
+                        <p>Copyright {new Date().getFullYear()}, {` `} <a href="https://google.com" title={"Hive Factory"}>Hive Factory</a>. All rights reserved.</p>
                     </div>
                 </div>
             </footer>

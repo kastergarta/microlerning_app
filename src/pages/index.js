@@ -6,20 +6,19 @@ import SEO from "../components/seo"
 import { Link } from "gatsby"
 
 
-import featureImage from "../../static/images/hero.png";
-import thumbnailEvent from "../../static/images/feature-event.png"
-import thumbnailBoard from "../../static/images/feature-board.png"
-import thumbnailNews from "../../static/images/feature-news.png"
-import thumbnailTeams from "../../static/images/feature-team.png"
-import thumbnailStaff from "../../static/images/feature-user.png"
+import featureImage from "../../static/images/Microlearning App_1.png";
+import thumbnailEvent from "../../static/images/Microlearning App_2.jpg"
+import thumbnailBoard from "../../static/images/Microlearning App_3.jpeg"
+import thumbnailNews from "../../static/images/Microlearning App_4.jpg"
+import thumbnailTeams from "../../static/images/Microlearning App_5.jpeg"
 
 const IndexPage = () => (
     <Layout>
         <SEO title="Make your Staff and Workspace Happy"/>
 
         <div className={"page-header home"}>
-            <h1>Make your Staff and Workspace Happy!!!</h1>
-            <p>HiStaff gives your complex the opportunity to increase the percentage of happiness<br/>and enjoyment of your staff and as a result, bring productivity to your workspace.</p>
+            <h1>Learn Something New Every Day</h1>
+            <p>Each morning, wake up to a new 5-minute lesson delivered to your email inbox. Choose from 300+ topics.<br/> 3,000+ Lessons. 100+ Experts. 400,000+ Lifelong Learners.</p>
             <img alt={"Dashboard"} src={featureImage}/>
         </div>
 
@@ -35,8 +34,8 @@ const IndexPage = () => (
 
                         <div className={"col-6"}>
                             <div className={"feature__content"}>
-                                <h2>Create and Join Events</h2>
-                                <p>Save your time and energy by letting HiStaff to manage your events (handle the colleague’s birthday, gathering, etc.)</p>
+                                <h2>Hundreds of Topics</h2>
+                                <p>Choose what you'd like to learn from 300+ topics.</p>
                             </div>
                         </div>
                     </div>
@@ -46,8 +45,8 @@ const IndexPage = () => (
                     <div className={"row"}>
                         <div className={"col-6"}>
                             <div className={"feature__content"}>
-                                <h2>Public Board</h2>
-                                <p>Let the staff write down on the board freely,<br/>Joking with each other and writing cool content can make the workplace more diverse and attractive for employees. </p>
+                                <h2>Delivery by Email</h2>
+                                <p>Get a new lesson straight to your inbox, every morning. Learn at your own pace. </p>
                             </div>
                         </div>
 
@@ -69,8 +68,8 @@ const IndexPage = () => (
 
                         <div className={"col-6"}>
                             <div className={"feature__content"}>
-                                <h2>Internal News</h2>
-                                <p>Get rid of sending news by e-mail and its problems; post the news in an internal and attractive format via HiStaff instead.</p>
+                                <h2>5 Minutes a Day</h2>
+                                <p>Read each lesson with your morning coffee, in just 5 minutes</p>
                             </div>
                         </div>
                     </div>
@@ -80,8 +79,8 @@ const IndexPage = () => (
                     <div className={"row"}>
                         <div className={"col-6"}>
                             <div className={"feature__content"}>
-                                <h2>Teams</h2>
-                                <p>HiStaff let you add staff in specific teams and manage them easily.</p>
+                                <h2>Learn from leading instructors and companies</h2>
+                                <p>We connect educators, brands, and experts with ambitious lifelong learners across the globe</p>
                             </div>
                         </div>
 
@@ -92,31 +91,14 @@ const IndexPage = () => (
                         </div>
                     </div>
                 </div>
-
-                <div className={"feature__item"}>
-                    <div className={"row"}>
-                        <div className={"col-6 first"}>
-                            <div className={"thumbnail"}>
-                                <img alt={"Users"} src={thumbnailStaff}/>
-                            </div>
-                        </div>
-
-                        <div className={"col-6"}>
-                            <div className={"feature__content"}>
-                                <h2>Staff management</h2>
-                                <p>Discard traditional ways to archive staff documents and information, and try new ways to store and archive them in HiStaff easily.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
         <div className={"call-to-action"}>
             <div className={"container"}>
                 <div className={"call-to-action__content"}>
-                    <h2>Sign up for free</h2>
-                    <p>Sign up and start increasing the productivity of your business with HiStaff.</p>
+                    <h2>Start learning for free</h2>
+                    <p>Choose a Topic ➞ Get 10 Daily Episodes ➞ Rinse and Repeat</p>
                 </div>
 
                 <div className={"button"}>
