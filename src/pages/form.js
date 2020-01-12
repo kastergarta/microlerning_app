@@ -10,7 +10,8 @@ export default function FormPage () {
   const [email, setEmail] = React.useState('');
 
   const handleLoginSubmit = (e) => {
-  e.preventDefault();
+    e.preventDefault()
+    console.log(5);
 
     let templateParams = {
       user_name: name,
@@ -19,7 +20,7 @@ export default function FormPage () {
      }
 
      emailjs.send(
-     "theguru.app.team@gmail.com",
+     'theguru.app.team@gmail.com',
      'template_OztCtOOX',
       templateParams,
      'user_qkmMCvLoKG06KjZD3u8VY'
