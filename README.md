@@ -1,14 +1,4 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://raw.githubusercontent.com/histaff/website-static/development/static/images/histaff.png" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  HiStaff Static Website
-</h1>
-
-It's a starter static website which useful plugins based on [Gatsby](https://www.gatsbyjs.org/) .
+## GURU - Microlearning APP `Updated 12.19.2020` [VIDEO](https://youtu.be/9RpBgMKWtDw)  [LIVE DEMO - Heroku](https://hawkathonproject.herokuapp.com/)
 
 ## 🚀 Quick start
 
