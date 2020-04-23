@@ -17,7 +17,11 @@ const Header = ({siteTitle}) => (
                 </div>
                 
                 <div>
-                  <Link to="/account">Go to your account</Link>
+                  <Link to="/account">Login</Link>
+                </div>
+
+                <div className={"get-started"}>
+                    <Link to="/account" title={"Login"}>Login</Link>
                 </div>
                 
                 <div className={"get-started"}>
