@@ -15,17 +15,9 @@ const Header = ({siteTitle}) => (
                         <img alt={"Logo"} src={logo}/>
                     </Link>
                 </div>
-                
-                <div>
-                  <Link to="/account">Login</Link>
-                </div>
 
                 <div className={"get-started"}>
-                    <Link to="/profile" title={"Login"}>Login</Link>
-                </div>
-                
-                <div className={"get-started"}>
-                    <Link to="/form" title={"Start Learning"}>Start Learning</Link>
+                    <Link to="/account" title={"Login"}>Login</Link>
                 </div>
             </div>
         </div>
