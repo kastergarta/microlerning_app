@@ -4,12 +4,12 @@ import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
 import { Link } from "gatsby"
 
 const Home = ({ user }) => {
-  return <p>Hi22222, {user.name ? user.name : "friend"}!</p>
+  return <p>Hiiiiiiii, {user.name ? user.name : "friend"}!</p>
 }
 const Settings = () => <p>Settings</p>
 const Billing = () => <p>Billing</p>
 
-const Account = () => {
+const Profile = () => {
   if (!isAuthenticated()) {
     login()
     return <p>Redirecting to login...</p>
@@ -42,4 +42,4 @@ const Account = () => {
   )
 }
 
-export default Account
+export default Profile

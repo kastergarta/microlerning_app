@@ -21,7 +21,7 @@ const Header = ({siteTitle}) => (
                 </div>
 
                 <div className={"get-started"}>
-                    <Link to="/account" title={"Login"}>Login</Link>
+                    <Link to="/profile" title={"Login"}>Login</Link>
                 </div>
                 
                 <div className={"get-started"}>
