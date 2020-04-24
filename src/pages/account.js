@@ -1,13 +1,7 @@
-import React from "react"
+import React, { Fragment } from "react";
 import { Router } from "@reach/router"
 import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
 import { Link } from "gatsby"
-
-const Home = ({ user }) => {
-  return <p>Hi, {user.name ? user.name : "friend"}!</p>
-}
-const Settings = () => <p>Settings</p>
-const Billing = () => <p>Billing</p>
 
 const Account = () => {
   if (!isAuthenticated()) {
@@ -20,9 +14,6 @@ const Account = () => {
   return (
     <>
       <nav>
-        <Link to="/account/">Home</Link>{" "}
-        <Link to="/account/settings/">Settings</Link>{" "}
-        <Link to="/account/billing/">Billing</Link>{" "}
         <a
           href="#logout"
           onClick={e => {
@@ -32,13 +23,18 @@ const Account = () => {
         >
           Log Out
         </a>
-      </nav>
 
-      <Router>
-        <Home path="/account/" user={user} />
-        <Settings path="/account/settings" />
-        <Billing path="/account/billing" />
-      </Router>
+      <Fragment>
+       <img src={user.picture} alt="" />
+
+       <h2>{user.name}</h2>
+
+       <div className={"get-started"}>
+          <Link to="/" title={"Homepage"}>Main Page</Link>
+       </div>
+
+      </Fragment>
+      </nav>
     </>
   )
 }
