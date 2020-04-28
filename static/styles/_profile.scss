@@ -1,6 +1,7 @@
 $purple-gradient: linear-gradient(45deg, rgba(87,29,146,1) 0%,rgba(172,25,102,1) 100%);
 $purple-gradient: linear-gradient(to bottom right, #C90A6D, #FF48A0);
 $shadow: 0 13px 26px rgba(#000, .2), 0 3px 6px rgba(#000, .2);
+$blue1-gradient: linear-gradient(to bottom right, #5E5AEC, #3F9EFC);
 
 
 * {
@@ -10,19 +11,35 @@ $shadow: 0 13px 26px rgba(#000, .2), 0 3px 6px rgba(#000, .2);
   }
 
 .body-profile-card {
-    width: 100%;
-    height: 100vh;
+      width: 100%;
+      height: 100vh;
       display: flex;
       position: relative;
-      background: #eeeeec;
-    align-items: center;
+      background: #ffffff;
+      align-items: center;
       flex-direction: column;
       justify-content: center;
       
       font-family: 'Open Sans', sans-serif;
       font-size: 100%;
 
-      .btn {
+      .btn-top {
+        color: #fff;
+        width: 100px;
+        height: 30px;
+        outline: none;
+        border: none;
+        display: block;
+        cursor: pointer;
+        font-weight: 300;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 70px;
+        box-shadow: 0 13px 26px rgba(#000, .16), 0 3px 6px rgba(#000, .16);
+        background: $blue1-gradient;
+        }
+
+    .btn {
         color: #fff;
         width: 130px;
         height: 42px;
@@ -37,17 +54,62 @@ $shadow: 0 13px 26px rgba(#000, .2), 0 3px 6px rgba(#000, .2);
         box-shadow: 0 13px 26px rgba(#000, .16), 0 3px 6px rgba(#000, .16);
         background: $purple-gradient;
     }
-    
   }
 
 .profile-card{
     width: 400px;
-    height: 600px;
+    height: 800px;
     background: #FDFEFF;
-	transition: background .6s ease;
 	border-radius: 10px;
 	padding: 20px 20px 20px 20px;
-	box-shadow: 0 8px 40px rgba(#000000, .2);
+    box-shadow: 0 8px 40px rgba(#000000, .2);
+
+    
+    .top-icons{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between
+    }
+    
+    .your-courses{
+        display: flex;
+		margin-top: 1.2em;
+        justify-content: space-evenly;
+        width: 360px;
+        height: 100px;
+        background: #FDFEFF;
+	    border-radius: 10px;
+	    padding: 20px 20px 20px 20px;
+        box-shadow: 0 8px 40px rgba(#000000, .2);
+    .icon {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        a {
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            font-size: 28px;
+            line-height: 60px;
+            text-align: center;
+            border-radius: 30px;
+            box-shadow: $shadow;
+        }
+      } 
+   }
+
+    .new-courses{
+        display: flex;
+		margin-top: 1.2em;
+        justify-content: space-evenly;
+        width: 360px;
+        height: 100px;
+        background: #FDFEFF;
+	    border-radius: 10px;
+	    padding: 20px 20px 20px 20px;
+        box-shadow: 0 8px 40px rgba(#000000, .2);
+    }
+
 }
 
 .profile {
