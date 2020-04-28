@@ -19,14 +19,14 @@ const Account = () => {
     <div class="top-icons">
      
       <button type="button" className="btn-top">
-        <Link to="/">Main Page</Link>
+        <Link to="/">Home</Link>
       </button>
 
       <button type="button" className="btn-top"  onClick={e => {
         logout();
         e.preventDefault();
       }}>
-        <Link to="#logout" >Logout</Link>
+        <Link to="#logout" ></Link>Logout
       </button>
 
     </div>
@@ -36,7 +36,6 @@ const Account = () => {
       <h3 class="name">Dennis Basyrov</h3>
       <p class="title">Javascript Developer</p>
 		  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam aliquid porro!</p>
-		  <button type="button" class="btn">New Course</button>
     </div>
 
     <div className='your-courses'>
@@ -52,8 +51,27 @@ const Account = () => {
     </div>
 
     <div className='new-courses'>
+    <div class="icon">
+        <a href="/"><i class="fab fa-dribbble"></i></a>
+      </div>
+      <div class="icon">
+        <a href="/"><i class="fab fa-behance"></i></a>
+      </div>
+      <div class="icon">
+			  <a href="/"><i class="fab fa-twitter"></i></a>
+		  </div>
+      <div class="icon">
+        <a href="/"><i class="fab fa-dribbble"></i></a>
+      </div>
+      <div class="icon">
+        <a href="/"><i class="fab fa-behance"></i></a>
+      </div>
+      <div class="icon">
+			  <a href="/"><i class="fab fa-twitter"></i></a>
+		  </div>
+      <button type="button" class="btn">New Course</button>
     </div>
-
+    
   </div>
   </div>
 
