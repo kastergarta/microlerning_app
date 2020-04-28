@@ -12,30 +12,36 @@ const Account = () => {
   const user = getProfile()
 
   return (
-    <>
-      <nav>
-        <a
-          href="#logout"
-          onClick={e => {
-            logout();
-            e.preventDefault();
-          }}
-        >
-          Log Out
-        </a>
 
-      <Fragment>
-       <img src={user.picture} alt="" />
+  <div className='body-profile-card'>
+  <div className='profile-card'>
 
-       <h2>{user.name}</h2>
+    <div class="top-icons">
+     
+      <button type="button" className="btn"  onClick={e => {
+        logout();
+        e.preventDefault();
+      }}>
+        <Link to="#logout" >Logout</Link>
+      </button>
 
-       <div className={"get-started"}>
-          <Link to="/" title={"Homepage"}>Main Page</Link>
-       </div>
+      <button type="button" className="btn">
+        <Link to="/" >Main Page</Link>
+      </button>
 
-      </Fragment>
-      </nav>
-    </>
+    </div>
+
+    <div className='profile'>
+      <img className='thumbnail' src={user.picture} alt="" />
+      <h3 class="name">Dennis Basyrov</h3>
+      <p class="title">Javascript Developer</p>
+		  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam aliquid porro!</p>
+		  <button type="button" class="btn">New Course</button>
+    </div>
+
+  </div>
+  </div>
+
   )
 }
 
